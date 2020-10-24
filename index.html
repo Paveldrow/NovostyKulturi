@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-		<title>Document</title>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-			<img src="img/logo.svg" width="347" height="47" alt="Логотип сайта «Новости культуры»">
-		<ul class="nav-list">
-			<li><a href="#">Новости</a></li>
-			<li><a href="#">Обзоры</a></li>
-			<li><a href="#">Музыка</a></li>
-			<li><a href="#">Архитектура</a></li>
-			<li><a href="#">Кино</a></li>
-			<li><a href="#">Театр</a></li>
-			<li><a href="#">Литература</a></li>
-			<li><a href="#">Религия</a></li>
-			<li><a href="#">Живопись</a></li>
-		</ul>
+	<header>
+		<img src="img/logo.svg" width="347" height="47" alt="Логотип сайта «Новости культуры»">
+		<nav>
+			<ul class="nav-list">
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Обзоры</a></li>
+				<li><a href="#">Музыка</a></li>
+				<li><a href="#">Архитектура</a></li>
+				<li><a href="#">Кино</a></li>
+				<li><a href="#">Театр</a></li>
+				<li><a href="#">Литература</a></li>
+				<li><a href="#">Религия</a></li>
+				<li><a href="#">Живопись</a></li>
+			</ul>
+		</nav>
 	</header>
 	<main>
-		<h1 class="visually-hidden" >Сайт «Новости культуры»</h1>
+
+		<h1 class="visually-hidden">Сайт «Новости культуры»</h1>
 		<section class="promo">
 			<h2>Подводный отель</h2>
-			<p>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+			<p>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен
+				воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
 		</section>
 		<section class="review">
 			<h2>Обзоры</h2>
 			<ul class="review-list">
-				<li>
-					<a href="#"><h3>«Шальные годы» Монпарнаса</h2></a>
+				<li class="review-item">
+					<a href="#">
+						<h3>«Шальные годы» Монпарнаса</h3>
+					</a>
 					<img src="img/img-review-1.jpg" width="370" height="203" alt="">
-					<p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
+					<p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка
+						«Шальные годы Монпарнаса»</p>
 				</li>
-				<li>
-					<a href="#"><h3>Анатомия за 30 секунд</h2></a>
+				<li class="review-item">
+					<a href="#">
+						<h3>Анатомия за 30 секунд</h3>
+					</a>
 					<img src="img/img-review-2.jpg" width="370" height="203" alt="">
-					<p>Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно‑популярной литературе заметно вырос</p>
+					<p>Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к
+						научно‑популярной литературе заметно вырос</p>
 				</li>
-				<li>
-					<a href="#"><h3>Сферические чудаки</h2></a>
+				<li class="review-item">
+					<a href="#">
+						<h3>Сферические чудаки</h3>
+					</a>
 					<img src="img/img-review-3.jpg" width="370" height="203" alt="">
-					<p>Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды» </p>
+					<p>Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере
+						спектакля «Чудаки и зануды» </p>
 				</li>
 			</ul>
 		</section>
@@ -65,32 +79,31 @@
 					<p>После спектаклей у вас будет возможность пообщаться с актёрами и взять у них автограф</p>
 				</li>
 			</ul>
-			<a href="" class="button">Смотреть</a>
+			<a href="#" class="button">Смотреть</a>
 		</section>
 	</main>
-	<footer>
-		<section class="footer-menu">
-		<img src="img/logo.svg" width="347" height="47" alt="Логотип сайта «Новости культуры»">
-		<ul class="nav-list footer-nav">
-			<li><a href="#">Новости</a></li>
-			<li><a href="#">Обзоры</a></li>
-			<li><a href="#">Музыка</a></li>
-			<li><a href="#">Архитектура</a></li>
-			<li><a href="#">Кино</a></li>
-			<li><a href="#">Театр</a></li>
-			<li><a href="#">Литература</a></li>
-			<li><a href="#">Религия</a></li>
-			<li><a href="#">Живопись</a></li>
-		</ul>
-	</section>
-	<section class="social">
-		<ul>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-		</ul>
-	</section>
+	<footer class="footer">
+			<img src="img/logo-white.svg" width="347" height="47" alt="Логотип сайта «Новости культуры»">
+			<ul class="nav-list nav-footer">
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Обзоры</a></li>
+				<li><a href="#">Музыка</a></li>
+				<li><a href="#">Архитектура</a></li>
+				<li><a href="#">Кино</a></li>
+				<li><a href="#">Театр</a></li>
+				<li><a href="#">Литература</a></li>
+				<li><a href="#">Религия</a></li>
+				<li><a href="#">Живопись</a></li>
+			</ul>
+		<section class="social">
+			<ul class="social-list">
+				<li><a  class="social-item social-instagram" href="#"><span class="visually-hidden">Facebook</span></a></li>
+				<li><a class="social-item social-facebook" href="#"><span class="visually-hidden">Instagram</span></a></li>
+				<li><a class="social-item social-twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+			</ul>
+		</section>
 	</footer>
 
 </body>
+
 </html>

@@ -1,21 +1,24 @@
 :root {
-    --basic-text-color: #000000;
-    --basic-link-hover: #FF7931;
-    --basic-text-light: #FFFFFF;
+    --basic-text-color             : #000000;
+    --basic-link-hover             : #FF7931;
+    --basic-link-active            : #F6A77C;
+    --basic-text-light             : #FFFFFF;
+    --basic-footer-background-color: #575757;
 }
 
 body {
-    min-width  : 1440px;
-    margin     : 0;
-    padding    : 0;
-    font-family: "Roboto", "Arial", sans-serif;
-    font-size  : 16px;
-    line-height: 22px;
-    font-weight: 400;
+    min-width       : 1440px;
+    margin          : 0;
+    padding         : 0;
+    font-family     : "Roboto", "Arial", sans-serif;
+    font-size       : 14px;
+    line-height     : 21px;
+    font-weight     : 400;
+    background-color: #ffffff;
 }
 
 .container {
-    width : 1168px;
+    width : 1440px;
     margin: 0 auto;
 }
 
@@ -46,6 +49,7 @@ img {
 
 header {
     text-align: center;
+    padding-top: 60px;
 }
 
 .nav-list {
@@ -58,6 +62,8 @@ header {
     font-weight    : 400;
     line-height    : 18px;
     margin         : 0 auto;
+    margin-top: 46px;
+    margin-bottom: 47px;
 }
 
 .nav-list a {
@@ -70,17 +76,33 @@ header {
 }
 
 .nav-list a:active {
-    color: #F6A77C;
+    color: var(--basic-link-active);
 }
 
 
 .promo {
-    width            : 100%;
-    width            : 1440px;
-    height           : 464px;
-    background-image : url("../img/background-promo.jpg");
+    position: relative;
+    height             : 464px;
+    background-image   : url("../img/background-promo.jpg");
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+    background-color   : var(--basic-footer-background-color);
+    text-align: center;
+    
+}
+
+.promo::before {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 55px;
+    top: 46px;
+    background-color: var(--basic-link-hover);
+    border-radius: 50%;
+    background-image: url("../img/icon-promo.svg");
     background-repeat: no-repeat;
-    margin           : 0 auto;
+    background-position: center;
 }
 
 .promo h2 {
@@ -88,8 +110,11 @@ header {
     font-size     : 72px;
     font-weight   : 400;
     line-height   : 84px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     text-align    : center;
+    padding-top: 133px;
+    margin-bottom: 139px;
 }
 
 .promo p {
@@ -99,6 +124,7 @@ header {
     font-weight: 400;
     line-height: 21px;
     margin     : 0 auto;
+    margin-bottom: 52px;
 }
 
 .review {
@@ -107,11 +133,44 @@ header {
 }
 
 .review h2 {
-    text-align: center;
+    text-align    : center;
+    text-transform: uppercase;
+    font-weight   : 700;
+    font-size     : 17px;
+    line-height   : 20px;
+    letter-spacing: 2px;
+    margin-top: 44px;
+    margin-bottom: 20px;
+
 }
 
+.review-item {
+    display: flex;
+    flex-direction: column;
+    text-align : center;
+}
+
+.review h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+
 .review a {
-    color: ;
+
+    color: var(--basic-text-color);
+}
+
+.review-item img {
+order: -1;
+}
+
+.review a:hover,
+.review a:focus {
+    color: var(--basic-link-hover);
+}
+
+.review a:active {
+    color: var(--basic-link-active);
 }
 
 .review-list {
@@ -124,4 +183,138 @@ header {
 
 .review-list li {
     width: 370px;
+}
+
+.tickets {
+    background    : radial-gradient(circle, #ffffff 45%, #f7f7f7 45%);
+    padding-top   : 34px;
+    padding-bottom: 37px;
+}
+
+.tickets h2 {
+    text-align    : center;
+    font-size     : 17px;
+    line-height   : 20px;
+    font-weight   : 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tickets-list {
+    text-align: center;
+    list-style: none;
+    margin    : 0;
+    padding   : 0;
+}
+
+.tickets-item {
+    margin-left : auto;
+    margin-right: auto;
+    width       : 370px;
+}
+
+.tickets-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size  : 23px;
+    line-height: 31px;
+}
+
+.tickets-item p {
+    text-align: center;
+
+    font-size  : 14px;
+    line-height: 21px;
+}
+
+.button {
+    position        : relative;
+    display         : block;
+    margin-left     : auto;
+    margin-right    : auto;
+    padding-left    : 30px;
+    padding-top     : 17px;
+    padding-bottom  : 15px;
+    width           : 140px;
+    color           : var(--basic-text-light);
+    background-color: var(--basic-link-hover);
+    text-transform  : uppercase;
+    font-size       : 12px;
+    line-height     : 14px;
+    font-weight     : 700;
+    letter-spacing  : 2px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--basic-link-active);
+}
+
+.button::before {
+    content         : "";
+    position        : absolute;
+    width           : 25px;
+    height          : 25px;
+    top             : 12px;
+    left            : 118px;
+    background-image: url("../img/icon-arrow.svg");
+}
+
+.footer {
+    text-align      : center;
+    background-color: var(--basic-footer-background-color);
+    padding-bottom: 46px;
+}
+
+.nav-footer {
+    padding: 0;
+    padding-bottom: 46px;
+    border-bottom: 1px solid var(--basic-text-light);
+}
+.nav-footer a {
+    color: var(--basic-text-light);
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin    : 0;
+    padding   : 0;
+
+}
+
+.social-item {
+    display: block;
+    margin-right: 7px; 
+    margin-left: 7px;
+    width: 47px;
+    height: 47px;
+    background-color: var(--basic-text-light);
+}
+
+.social-item:hover,
+.social-item:focus {
+    background-color: var(--basic-link-hover);
+}
+
+.social-item:active {
+    background-color: var(--basic-link-active);
+}
+
+.social-instagram {
+    background-image: url("../img/icon_inst.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-facebook {
+    background-image: url("../img/icon-fb.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-twitter {
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
