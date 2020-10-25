@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version
+*/
+
 :root {
     --basic-text-color             : #000000;
     --basic-link-hover             : #FF7931;
@@ -53,8 +60,12 @@ header {
 }
 
 .nav-list {
+    display        : -webkit-box;
+    display        : -ms-flexbox;
     display        : flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width          : 1171px;
     list-style     : none;
     text-transform : uppercase;
@@ -81,9 +92,9 @@ header {
     color: var(--basic-link-active);
 }
 
-
 .promo {
-    box-sizing         : border-box;
+    -webkit-box-sizing         : border-box;
+            box-sizing         : border-box;
     position           : relative;
     height             : 464px;
     background-image   : url("../img/background-promo.jpg");
@@ -163,8 +174,12 @@ header {
 }
 
 .review-list {
+    display        : -webkit-box;
+    display        : -ms-flexbox;
     display        : flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     list-style     : none;
     margin         : 0;
     margin-left    : 1px;
@@ -172,8 +187,13 @@ header {
 }
 
 .review-item {
+    display       : -webkit-box;
+    display       : -ms-flexbox;
     display       : flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width         : 370px;
 }
 
@@ -191,7 +211,9 @@ header {
 }
 
 .review-item img {
-    order: -1;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
 }
 
 .review a:hover,
@@ -321,8 +343,12 @@ header {
 }
 
 .social-list {
+    display        : -webkit-box;
+    display        : -ms-flexbox;
     display        : flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     list-style     : none;
     margin         : 0;
     padding        : 0;
